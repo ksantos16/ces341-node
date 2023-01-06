@@ -89,7 +89,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "devStart":"nodemon ./src/server.js",
+    "start": "./src/server.js"
   },
   "keywords": [],
   "author": "",
