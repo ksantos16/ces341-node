@@ -1,5 +1,5 @@
 const routes = require('express').Router();
-const dataDisplay = require('../controller/');
+const dataDisplay = require('../controller');
 
 routes.get('/', dataDisplay.displayData);
 
