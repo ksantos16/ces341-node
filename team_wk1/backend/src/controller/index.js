@@ -1,6 +1,6 @@
 displayData = (req, res) => {
     const data =
-    'Hello World';
+    'Matthew Santos';
     res.status(200).send(data);
 };
 
