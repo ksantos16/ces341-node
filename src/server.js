@@ -1,27 +1,17 @@
 const express = require('express');
-const bodyParser = require ('body-parser');
-const mongodb = require ("./db/contacts")
-
-const port = process.env.PORT || 8080;
+// const mongoose = require('mongoose');
+// require('dotenv').config();
 const app = express();
 
-mongoClient = require ("mongodb");
+// mongoose.connect(`mongodb://<dbuser>:<dbpassword>@ds241658.mlab.com:41658/test_db`,(err)=>{
+// if(err) throw err;
+// console.log("DB Connected Successfully");
+// })
 
+const port = process.env.PORT || 3001;
 
-app
-.use(bodyParser.json())
-.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Orgin", "*");
-    next();
+app.use('/', require('./routes'))
+
+app.listen(port, () => {
+    console.log(`Running on port ${port}`)
 })
-.use('/', require('./routes'))
-
-
-mongodb.initDb((err, mongodb) => {
-    if(err) {
-        console.log(err);
-    } else {
-        app.listen(port);
-        console.log(`Connected to DC and listening on ${port}`);
-    }
-});
