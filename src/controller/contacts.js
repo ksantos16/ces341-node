@@ -70,6 +70,13 @@ const updateContact = async (req,res,next) => {
 
 const deleteContact = async (req,res,next) => {
   const userId = new ObjectId(req.params.id);
+  const contact = {
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      email: req.body.email,
+      favoriteColor: req.body.favoriteColor,
+      birthday: req.body.birthday
+    };
   const response = await mongodb
   .getDb()
   .db('CSE341')
