@@ -1,16 +1,9 @@
 ###LOCALHOST REQUEST
 
 GET http://localhost:8080/contacts
-###
-GET http://localhost:8080/contacts/63c0d3410413db64b9f1619e
-###
-GET http://localhost:8080/contacts/63c0d3cc0413db64b9f1619f
-###
-GET http://localhost:8080/contacts/63c0d44a0413db64b9f161a0
-
 ###CREAT CONTACT (POST)
-POST  http://localhost:8080/contacts
-HTTP/1.1 content-type: application/json
+POST  http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
 {
     "firstName": "Theodore",
     "lastName": "Santos",
@@ -18,10 +11,9 @@ HTTP/1.1 content-type: application/json
     "favoriteColor": "blue",
     "birthday": "01/29"
 }
-
 ###UPDATE CONTACT (PUT)
-PUT  http://localhost:8080/contacts/63c0d44a0413db64b9f161a0
-HTTP/1.1 content-type: application/json
+PUT  http://localhost:8080/contacts/63c0d44a0413db64b9f161a0 HTTP/1.1
+content-type: application/json
 {
     "firstName": "Susanne",
     "lastName": "Carver",
@@ -29,26 +21,17 @@ HTTP/1.1 content-type: application/json
     "favoriteColor": "pink",
     "birthday": "05/24"
 }
-
 ###DELETE CONTACT (DELETE)
-DELETE   http://localhost:8080/contacts/63c0d3cc0413db64b9f1619f
-HTTP/1.1
+DELETE   http://localhost:8080/contacts/63c0d3cc0413db64b9f1619f HTTP/1.1
+content-type: application/json
 
 ###RENDER REQUEST
-
 ###
 GET https://cse341-activity1.onrender.com/contacts
 ###
-GET https://cse341-activity1.onrender.com/contacts/63c0d3410413db64b9f1619e
-###
-GET https://cse341-activity1.onrender.com/contacts/63c0d3cc0413db64b9f1619f
-###
-GET https://cse341-activity1.onrender.com/contacts/63c0d44a0413db64b9f161a0
-
-
 ###CREAT CONTACT (POST)
-POST  http://cse341-activity1.onrender.com/contacts
-HTTP/1.1 content-type: application/json
+POST  http://cse341-activity1.onrender.com/contacts HTTP/1.1
+content-type: application/json
 {
     "firstName": "Theodore",
     "lastName": "Santos",
@@ -56,10 +39,9 @@ HTTP/1.1 content-type: application/json
     "favoriteColor": "blue",
     "birthday": "01/29"
 }
-
 ###UPDATE CONTACT (PUT)
-PUT  http://cse341-activity1.onrender.com/contacts/63c0d44a0413db64b9f161a0
-HTTP/1.1 content-type: application/json
+PUT  http://cse341-activity1.onrender.com/contacts/63c0d44a0413db64b9f161a0 HTTP/1.1
+content-type: application/json
 {
     "firstName": "Susanne",
     "lastName": "Carver",
@@ -67,8 +49,7 @@ HTTP/1.1 content-type: application/json
     "favoriteColor": "pink",
     "birthday": "05/24"
 }
-
 ###DELETE CONTACT (DELETE)
-DELETE   http://cse341-activity1.onrender.com/contacts/63c0d3cc0413db64b9f1619f
-HTTP/1.1
+DELETE   http://cse341-activity1.onrender.com/contacts/63c0d3cc0413db64b9f1619f HTTP/1.1
+
 
