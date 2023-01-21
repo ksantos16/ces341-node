@@ -24,7 +24,7 @@ content-type: application/json
     "birthday": "05/24"
 }
 ###DELETE CONTACT (DELETE)
-DELETE   http://localhost:8080/contacts/63cc362c07cb4085aa7924c7 HTTP/1.1
+DELETE   http://localhost:8080/contacts/63cc3c452c9260e0c91a4287 HTTP/1.1
 content-type: application/json
 ###
 
@@ -58,6 +58,6 @@ content-type: application/json
     "birthday": "05/24"
 }
 ###DELETE CONTACT (DELETE)
-DELETE   http://cse341-activity1.onrender.com/contacts/63cc362c07cb4085aa7924c7 HTTP/1.1
+DELETE   http://cse341-activity1.onrender.com/contacts/63cc3c452c9260e0c91a4287 HTTP/1.1
 
 
