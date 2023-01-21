@@ -27,6 +27,7 @@ content-type: application/json
 DELETE   http://localhost:8080/contacts/63cc32968ca0b14f7c3efd0b HTTP/1.1
 content-type: application/json
 ###
+
 ###RENDER REQUEST
 ###
 GET https://cse341-activity1.onrender.com/contacts
@@ -50,7 +51,7 @@ content-type: application/json
     "firstName": "Susanne",
     "lastName": "Carver",
     "email": "husucarverii@live.com",
-    "favoriteColor": "pink",
+    "favoriteColor": "hot pink",
     "birthday": "05/24"
 }
 ###DELETE CONTACT (DELETE)
