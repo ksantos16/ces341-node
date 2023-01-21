@@ -36,11 +36,11 @@ POST  http://cse341-activity1.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Theodore",
+    "firstName": "Lola",
     "lastName": "Santos",
-    "email": "teddyS@test.com",
-    "favoriteColor": "blue",
-    "birthday": "01/29"
+    "email": "lolaS@test.com",
+    "favoriteColor": "purple",
+    "birthday": "10/16"
 }
 ###UPDATE CONTACT (PUT)
 PUT  http://cse341-activity1.onrender.com/contacts/63c0d44a0413db64b9f161a0 HTTP/1.1
