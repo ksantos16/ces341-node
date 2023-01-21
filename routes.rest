@@ -1,9 +1,10 @@
 ###LOCALHOST REQUEST
-
+###
 GET http://localhost:8080/contacts
 ###CREAT CONTACT (POST)
 POST  http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
+
 {
     "firstName": "Theodore",
     "lastName": "Santos",
@@ -14,6 +15,7 @@ content-type: application/json
 ###UPDATE CONTACT (PUT)
 PUT  http://localhost:8080/contacts/63c0d44a0413db64b9f161a0 HTTP/1.1
 content-type: application/json
+
 {
     "firstName": "Susanne",
     "lastName": "Carver",
@@ -24,7 +26,7 @@ content-type: application/json
 ###DELETE CONTACT (DELETE)
 DELETE   http://localhost:8080/contacts/63c0d3cc0413db64b9f1619f HTTP/1.1
 content-type: application/json
-
+###
 ###RENDER REQUEST
 ###
 GET https://cse341-activity1.onrender.com/contacts
@@ -32,6 +34,7 @@ GET https://cse341-activity1.onrender.com/contacts
 ###CREAT CONTACT (POST)
 POST  http://cse341-activity1.onrender.com/contacts HTTP/1.1
 content-type: application/json
+
 {
     "firstName": "Theodore",
     "lastName": "Santos",
@@ -42,6 +45,7 @@ content-type: application/json
 ###UPDATE CONTACT (PUT)
 PUT  http://cse341-activity1.onrender.com/contacts/63c0d44a0413db64b9f161a0 HTTP/1.1
 content-type: application/json
+
 {
     "firstName": "Susanne",
     "lastName": "Carver",

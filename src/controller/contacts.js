@@ -40,10 +40,9 @@ const createContact = async (req,res,next) => {
   .collection('contacts')
   .insertOne(contact);
   if (response.acknowledged) {
-    res.setHeader('Content-Type', 'application/json');
     res.status(201).json(response);
   } else {
-    res.status(500).json(response.error || 'Error has occurred while creating the contact.');
+    res.status(500).json(response.error || 'Some error occurred while creating the contact.');
   }
 };
 
@@ -62,7 +61,6 @@ const updateContact = async (req,res,next) => {
   .replaceOne({ _id: userId }, contact);
   console.log(response);
   if (response.modifiedCount > 0) {
-    res.setHeader('Content-Type', 'application/json');
     res.status(204).send();
   } else {
     res.status(500).json(response.error || 'Some error occurred while updating the contact.');
@@ -70,24 +68,16 @@ const updateContact = async (req,res,next) => {
 };
 
 const deleteContact = async (req,res,next) => {
-  const contact = {
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      email: req.body.email,
-      favoriteColor: req.body.favoriteColor,
-      birthday: req.body.birthday
-    };
   const response = await mongodb
   .getDb()
   .db('CSE341')
   .collection('contacts')
-  .remove({ _id: userId }, true);
+  .replaceOne({ _id: userId }, contact);
   console.log(response);
-  if (response.deletedCount > 0) {
-    res.setHeader('Content-Type', 'application/json');
+  if (response.modifiedCount > 0) {
     res.status(204).send();
   } else {
-    res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
+    res.status(500).json(response.error || 'Some error occurred while updating the contact.');
   }
 };
 
