@@ -28,11 +28,11 @@ const getSingle = async (req, res, next) => {
 
 const createContact = async (req,res,next) => {
   const contact = {
-    firstName: "Theodore",
+    firstName: "Lola",
     lastName: "Santos",
-    email: "teddyS@test.com",
-    favoriteColor: "blue",
-    birthday: "01/29"
+    email: "lolaS@test.com",
+    favoriteColor: "purple",
+    birthday: "10/16"
   };
   const response = await mongodb
   .getDb()
