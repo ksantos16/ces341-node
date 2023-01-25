@@ -6,9 +6,9 @@ POST  http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Lolo",
+    "firstName": "Jamie",
     "lastName": "Santos",
-    "email": "loloS@test.com",
+    "email": "JS@test.com",
     "favoriteColor": "green",
     "birthday": "05/07"
 }
@@ -20,7 +20,7 @@ content-type: application/json
     "firstName": "Susanne",
     "lastName": "Carver",
     "email": "husucarverii@live.com",
-    "favoriteColor": "hot pink",
+    "favoriteColor": "pink",
     "birthday": "05/24"
 }
 ###DELETE CONTACT (DELETE)
@@ -40,9 +40,9 @@ POST  http://cse341-activity1.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Lolo",
+    "firstName": "Jamie",
     "lastName": "Santos",
-    "email": "loloS@test.com",
+    "email": "JS@test.com",
     "favoriteColor": "green",
     "birthday": "05/07"
 }
@@ -54,7 +54,7 @@ content-type: application/json
     "firstName": "Susanne",
     "lastName": "Carver",
     "email": "husucarverii@live.com",
-    "favoriteColor": "hot pink",
+    "favoriteColor": "pink",
     "birthday": "05/24"
 }
 ###DELETE CONTACT (DELETE)
