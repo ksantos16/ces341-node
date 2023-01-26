@@ -2,7 +2,11 @@
   "swagger": "2.0",
   "info": {
     "title": "My API",
+<<<<<<< HEAD
     "description": "Contacts API",
+=======
+    "description": "Temple API",
+>>>>>>> bf6615d85ea8754886335d60ba9d5478117b5340
     "version": "1.0.0"
   },
   "host": "localhost:8080",
@@ -11,6 +15,7 @@
     "http"
   ],
   "paths": {
+<<<<<<< HEAD
     "/contacts/": {
       "get": {
         "description": "",
@@ -21,6 +26,31 @@
         "responses": {
           "200": {
             "description": "OK"
+=======
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/temples/": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "apiKey",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+>>>>>>> bf6615d85ea8754886335d60ba9d5478117b5340
           }
         }
       },
@@ -33,6 +63,7 @@
             "schema": {
               "type": "object",
               "properties": {
+<<<<<<< HEAD
                 "firstName": {
                   "example": "any"
                 },
@@ -46,6 +77,18 @@
                   "example": "any"
                 },
                 "birthday": {
+=======
+                "name": {
+                  "example": "any"
+                },
+                "temple_id": {
+                  "example": "any"
+                },
+                "description": {
+                  "example": "any"
+                },
+                "location": {
+>>>>>>> bf6615d85ea8754886335d60ba9d5478117b5340
                   "example": "any"
                 }
               }
@@ -53,8 +96,16 @@
           }
         ],
         "responses": {
+<<<<<<< HEAD
           "201": {
             "description": "Created"
+=======
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+>>>>>>> bf6615d85ea8754886335d60ba9d5478117b5340
           },
           "500": {
             "description": "Internal Server Error"
@@ -62,6 +113,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "/contacts/{id}": {
       "get": {
         "description": "",
@@ -74,11 +126,28 @@
             "in": "path",
             "required": true,
             "type": "string"
+=======
+    "/temples/{temple_id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "temple_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "apiKey",
+            "in": "header",
+            "type": "string"
+>>>>>>> bf6615d85ea8754886335d60ba9d5478117b5340
           }
         ],
         "responses": {
           "200": {
             "description": "OK"
+<<<<<<< HEAD
           }
         }
       },
@@ -162,6 +231,11 @@
         "responses": {
           "204": {
             "description": "No Content"
+=======
+          },
+          "404": {
+            "description": "Not Found"
+>>>>>>> bf6615d85ea8754886335d60ba9d5478117b5340
           },
           "500": {
             "description": "Internal Server Error"
